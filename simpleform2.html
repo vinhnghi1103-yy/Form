@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG KÝ HỌC VIÊN</title>
+    <style>
+        table{
+            width: 400px;
+            height: 300px;
+            border-collapse: collapse;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color:rgb(247, 247, 154);
+            
+        }
+        label{
+            color: rgb(231, 135, 24);
+        }
+        td{
+            color: blue;
+            padding-left: 10px;
+        }
+        textarea,input{
+            border: 3px solid grey;
+            border-style: ridge none none ridge;
+        }
+       fieldset{
+           width: 410px;
+           height: 310px;
+           background-color: lightcyan;
+       }
+       textarea{
+           width: 150px;
+           height: 50px;
+       }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <table>
+                <tr style="background-color:rgb(172, 236, 172);color: blue;font-size: larger;">
+                    <th colspan="3">ĐĂNG KÝ HỌC VIÊN</th>
+                </tr>
+                <tr>
+                    <td>Họ và tên</td> 
+                    <td colspan="2"><input type = "text" name="name" style="width:200px"><br></td>
+                </tr>
+                    <tr>
+                       <td>Ngày sinh</td> 
+                       <td colspan="2"><input type ="date" name="email" style="width:180px"></td>
+                    </tr>
+                    <tr>
+                        <td>Giới tính</td>
+                        <td><label><input name="gt" value="nam" type="radio"/>Nam</label>
+                        <label><input name="gt" value="nu" type="radio"/>Nữ</label></td>
+                    </tr>
+                     <tr>
+                         <td>Địa chỉ</td>
+                         <td colspan="2"><textarea cols="5" rows="3"></textarea></td>
+                     </tr>
+                     <tr>
+                        <td>Lớp</td> 
+                     </tr>
+                        <tr>
+                            <td>Email</td> 
+                            <td colspan="2"><input type ="email" name="email" style="width:180px"></td>
+                         </tr>
+                         <tr>
+                            <td>Điện thoại</td> 
+                            <td colspan="2"><input type="tel" name="tel" style="width:180px"></td>
+                         </tr>
+                         <tr>
+                            <td></td>
+                            <td><input type="submit" name="btSubmit" value="Đăng ký"/>
+                            <input type="reset" name="btreset" value="Nhập lại"/></td>
+                        </tr>  
+            </table>
+        </fieldset> 
+    </form>
+</body>
+</html>
