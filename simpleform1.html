@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SỞ THÍCH CỦA BẠN</title>
+    <style>
+        table{
+            width: 400px;
+            height: 200px;
+            border-collapse: collapse;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color:rgb(241, 229, 229);
+            padding: 5px;
+
+        }
+        label{
+            color: rgb(231, 135, 24);
+        }
+        td{
+            color: blue;
+        }
+        input{
+            border: 3px solid grey;
+            border-style: ridge none none ridge;
+        }
+       fieldset{
+           width: 410px;
+           height: 210px;
+           background-color: lightcyan;
+       }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <table>
+            <tr style="background-color: rgb(228, 85, 2);color: white;font-size: larger;">
+            <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+        </tr>
+        <tr>
+            <td style="text-align: right;">Họ và tên</td> 
+            <td colspan="3"><input type = "text" name="name" style="width:200px"><br></td>
+        </tr>
+            <tr>
+               <td style="text-align: right;">Email</td> 
+               <td colspan="3"><input type ="email" name="email" style="width:150px"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Sở thích</td>
+                <td><label><input name="hobby" value="travel" type="checkbox"/> Thể thao</label></td>
+                <td><label><input name="hobby" value="sport" type="checkbox"/> Âm nhạc</label></td>
+                <td><label><input name="hobby" value="cooking" type="checkbox"/> Đọc sách</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><label><input name="hobby" value="travel" type="checkbox"/> Lướt web</label></td>
+                <td><label><input name="hobby" value="sport" type="checkbox"/> Chơi game</label></td>
+                <td><label><input name="hobby" value="cooking" type="checkbox"/> Điện ảnh</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><label><input name="hobby" value="travel" type="checkbox"/> Du lịch</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="btSubmit" value="Gửi thông tin"/></td>
+                <td><input type = "reset" name="btreset" value="Nhập lại"/></td>
+            </tr>    
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
