@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM ĐĂNG KÝ NGƯỜI DÙNG</title>
+    <style>
+       fieldset{
+           width: 180px;
+           height: auto;
+           background-color: lightcyan;
+           line-height:2px;
+           font-size: 25px;
+       }
+       input{
+            border: 3px solid grey;
+            border-style: ridge none none ridge;
+        }
+        input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+ 
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: blue;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    </style>
+</head>
+<body>
+    <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+        <fieldset>
+    <p>Họ và tên</p>
+    <input type ="text" name="name">
+    <p>Email</p>
+    <input type ="email" name="email">
+    <p>Số điện thoại</p>
+    <input type ="tel" name="phone">
+    <p>Giới tính</p>
+    <label><input name="gender" value="nam" type="radio"/>Nam</label>
+    <label><input name="gender" value="nu" type="radio"/>Nữ</label><br><br><br>
+    <input style="border-radius: 5px;" type="submit" name="sign" value="Đăng ký">
+</fieldset>
+</form>
+</body>
+</html>
